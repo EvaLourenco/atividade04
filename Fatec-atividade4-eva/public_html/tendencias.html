@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Atividade 4 - Eva</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" href="css/estilo.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="css/bootstrap-notify.min.js" type="text/javascript"></script>
+        <script src="js/script.js" type="text/javascript"></script>
+    </head>
+    <body class="fundo">
+        <div class="container">
+            <!--TOPO A E -->
+            <header class="row no-gutters" id="topo">
+                <div class="col-12 col-md-6">
+                    <a href="index.html">
+                        <img class="img-responsive" src="imagens/14_01_blog_trends.jpg" >          
+                    </a>
+                </div> 
+
+                <div class="col-12 col-md-6">
+                    <a href="tendencias.html">
+                        <img class="img-responsive" src="imagens/fundo1.png">                    
+                    </a>
+                </div>
+            </header>
+
+            <!--CORPO B -->
+            <section class="row">
+                <div class="col-12 col-md-12">
+                    <br>
+                    <br>
+                    <div class="card">
+                        <div class="card-header">
+                            Formulário
+                        </div>
+
+                        <div class="card-body">
+
+                            <form method="post" onsubmit="return validar()" name='formulario' id="formulario">
+                                <label for="nome">Nome</label>
+                                <input id="nome" placeholder="NOME COMPLETO" class="form-control" type="text" name="nome" />
+                                <label for="email">E-mail</label>
+                                <input  id="email" placeholder="E-MAIL" class="form-control" name="email" />
+                                <label for="tendencia">Qual tendência escolhida?</label>
+                                <br/>
+                                <select class="form-control">
+                                    <option value="op0">ESCOLHA UMA TENDÊNCIA</option>
+                                    <option value="op1">01 – COISAS AUTÔNOMAS</option>
+                                    <option value="op3">02 – ANÁLISE AUMENTADA</option>
+                                    <option value="op3">03 – DESENVOLVIMENTO ORIENTADO POR IA</option>
+                                    <option value="op4">04 – DIGITAL TWINS</option>
+                                    <option value="op4">05 – EMPOWERED EDGE</option>
+                                    <option value="op4">06 – TECNOLOGIAS IMERSIVAS</option>
+                                    <option value="op4">07 – BLOCKCHAIN</option>
+                                    <option value="op4">08 – ESPAÇOS INTELIGENTES</option>
+                                    <option value="op4">09 – ÉTICA E PRIVACIDADE DIGITAL</option>
+                                    <option value="op4">10 – COMPUTAÇÃO QUÂNTICA</option>
+                                </select><br/>
+                                <label for="duvidas">Dúvidas</label><br/>
+                                <textarea id="duvidas" name="duvidas" data-ls-module="charCounter" class="form-control" placeholder="Preecha com suas dúvidas."></textarea><br/>
+                                <input class="btn btn-primary" type="submit" value="Enviar" name="btnEnviar" onsubmit="validar()" /> 
+                                <div id="msgemail"></div>
+                            </form>     
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <br>
+            <br>
+
+            <!--RODAPE C D -->
+            <footer class="row" id="rodape">
+                <div class="col-12 col-md-6">
+                    <a href="index.html">
+                        <img class="img-responsive" src="imagens/validaForm.jpg">         
+                    </a>
+                </div> 
+
+                <div class="col-12 col-md-6">
+                    <a href="tendencias.html">
+                        <img class="img-responsive" src="imagens/Strategic-Tech-Trends.png" >                    
+                    </a>
+                </div         
+            </footer>         
+        </div>
+
+    </body>
+</html>
